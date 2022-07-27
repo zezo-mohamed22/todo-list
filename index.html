@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="to-do-list.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo list</title>
+  </head>
+  <body>
+    <section class="todo_list">
+      <div class="task_input">
+        <i class="fa-solid fa-plus"></i>
+        <input type="text" name="" id="task_name" placeholder="New Task" />
+        <input type="submit" value="Add" id="add_task_btn" />
+      </div>
+      <div id="error_msg">Error: Enter Task Name</div>
+      <div class="task_list_control">
+        <div class="filters">
+          <span id="all_tasks" class="active" style="margin-left: -20px"
+            >Inbox</span
+          >
+          <span id="completed_tasks">Completed</span>
+        </div>
+        <button class="clear_btn">Clear All</button>
+      </div>
+      <div class="task_list">
+        <h3 style="margin-top: 10px; font-weight: 500">Tasks:</h3>
+        <ul class="task_box">
+          <!-- <li class="task" id="task_1">
+            <label for="task1">
+              <input type="checkbox" onclick="markAsComplete('1')" name="" id="task1" />
+              <p>Woke up at 8 clock</p>
+            </label>
+            <div class="task_controls" id="taskContorls1">
+              <i class="fa-solid fa-ellipsis"></i>
+              <ul class="task_operations">
+                <li class="edit_task" onclick="edit_task('1')">
+                  <i class="fa-solid fa-pen-clip"></i>Edit
+                </li>
+                <li class="delete_task" onclick="delete_task('1')">
+                  <i class="fa-solid fa-trash"></i>Delete
+                </li>
+              </ul>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
